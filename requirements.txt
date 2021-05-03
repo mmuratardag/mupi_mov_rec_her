@@ -1,6 +1,5 @@
  
 numpy
-collections
 pandas
 seaborn
 matplotlib
