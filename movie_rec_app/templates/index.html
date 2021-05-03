@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Tensor Tarragon Movies</title>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    
+        <meta name="Keywords" content="nmf, collaborative filtering, cosim">
+        <meta name="Description" content="Spiced movie recommender">    
+        <meta name="Distribution" content="Global">
+        <meta name="Robots" content="index,follow">
+        <meta name="author" content="Dr. Kristian Rother, Paul Wlodkowski">
+    
+        <link rel="stylesheet" href="/static/style.css">
+    
+    </head>
+    <body>
+      <center>
+      <div class="header">
+        <h1>Welcome to the movie recommender</h1>
+      </div>
+
+      <div class="content">
+
+        <img src="/static/octocat_director_bg.png" style="width: 300px">
+        <br>Why don't we start with some completely random recommendations; below are three random movies for you.<br>
+        <br>{{random3[0]}}
+        <br>{{random3[1]}}
+        <br>{{random3[2]}}
+        
+        <p>You might as well, try those out or let the web app get to know you a bit better.</p>
+
+        <p>
+          <br>Below you can also see some 9 random movies, which you can rate.
+          <br>
+          <br>According to your rating, the web app may be able to come up with customized movie recommendations.
+          <br>
+          <br>All you need to do is rate the movies with a value between <i><b>1 - 5</b></i>.
+          <br>
+          <br>In the likely case you have not seen the randomly presented movie, feel free to rate it with a <i><b>3.5</b></i>;
+              that would be like giving an average rating to the movie.
+          <br>
+          <br><b>Your recommendation will be based on a collection of 9742 movies previously rated by 610 users.</b>
+
+        </p>
+
+        <form action="/recommender">
+
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+            {% for r in random9_2b_rated %}
+            <tr>
+              <td>{{r}}</td>
+              <td><input type="text" name="{{r}}" placeholder="Enter your rating..."></td>
+            </tr>
+            {% endfor %}
+          </table>
+
+            <br><input type="submit" value="Submit">
+
+        </form>
+      </div>
+    </center>
+
+    <audio controls>
+      <source src="static/audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    </body>
+
+</html>

@@ -1,0 +1,37 @@
+
+body {
+    background-color: rgb(250, 245, 245);
+    color:rgb(33, 19, 104);
+}
+
+.header {
+    background-color: rgb(230, 145, 235);
+    color:#ffffff;
+
+    size: 30px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content {
+    background-color: rgb(203, 177, 204);
+    color: rgb(25, 20, 99);
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

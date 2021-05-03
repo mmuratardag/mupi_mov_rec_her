@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+        <title>Tensor Tarragon Movies</title>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    
+        <meta name="Keywords" content="nmf, collaborative filtering, cosim">
+        <meta name="Description" content="Spiced movie recommender">    
+        <meta name="Distribution" content="Global">
+        <meta name="Robots" content="index,follow">
+        <meta name="author" content="Dr. Kristian Rother, Paul Wlodkowski">
+    
+        <link rel="stylesheet" href="/static/style.css">
+
+    </head>
+    <body>
+
+      <div class="header">
+
+        <center>
+
+        <h1>Your movie recommendations are the following</h1>
+
+       </center>
+      </div>
+
+      <center>
+
+      <div class="content">
+
+        <!-- <p>{{ recom_list }}</p> -->
+        {% for rec in recom_list%}
+        <p>{{rec}}</p>
+        {% endfor %}
+
+      </center>
+      <center> <img src="/static/octocat_camera.png" style="width: 300px"></center>
+        <a href="/">[ go back ]</a>
+
+        <!-- Jinja syntax with double curly brackets -->
+        <!-- {{ message }}  -->
+
+      </div>
+
+    </body>
+
+</html>
